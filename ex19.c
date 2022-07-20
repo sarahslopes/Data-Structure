@@ -73,8 +73,8 @@ int main()
     get_largest_number(array, size, &largest);
     get_repetition(array, size, largest, &times);
 
-    printf("-------------------------------------");
+    printf("-------------------------------------\n");
     printf("MAIOR NUMERO: %d\n", largest);
     printf("VEZES REPETIDAS: %d\n", times);
-    printf("-------------------------------------");
+    printf("-------------------------------------\n");
 }
