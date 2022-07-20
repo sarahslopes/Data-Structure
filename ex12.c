@@ -3,6 +3,20 @@
 
 int i = 0;
 
+int main(){
+    int a, b, c, *pa, *pb, *pc;
+    pa = &a;
+    pb = &b;
+    pc = &c;
+
+    scanf("%d%d%d", &a, &b, &c);
+
+    int response = verifica(&a, &b, &c);
+
+    printf("%d %d %d", *pa, *pb, *pc);
+    exit(response);
+}
+
 int verifica(int *pa, int *pb, int *pc){
 
     for(i = 0; i < 3; i++){
@@ -35,16 +49,3 @@ int verifica(int *pa, int *pb, int *pc){
 
 }
 
-int main(){
-    int a, b, c, *pa, *pb, *pc;
-    pa = &a;
-    pb = &b;
-    pc = &c;
-
-    scanf("%d%d%d", &a, &b, &c);
-
-    int response = verifica(&a, &b, &c);
-
-    printf("%d %d %d", *pa, *pb, *pc);
-    exit(response);
-}
